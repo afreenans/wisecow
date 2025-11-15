@@ -7,8 +7,7 @@ spec:
     app: wisecow
   type: NodePort
   ports:
-    - name: http
-      port: 80
+    - protocol: TCP
+      port: 4499
       targetPort: 4499
       nodePort: 30080
-
